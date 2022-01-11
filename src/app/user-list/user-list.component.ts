@@ -13,7 +13,7 @@ export class UserListComponent implements OnInit {
    * Hozd létre az alábbi Input tulajdonságot.
    * @var phraseString {string} - Input tulajdonság
    */
-  @Input() phraseString!: string;
+  @Input() phraseString: string = '';
 
 
   @Input() users: User[] = [];
@@ -25,7 +25,7 @@ export class UserListComponent implements OnInit {
    * Hozd létre az alábbi változót.
    * @var columnKey {string} - a rendezés oszlopának kulcsa
    */
-  columnKey!: string;
+  columnKey: string = '';
 
   constructor() { }
 
